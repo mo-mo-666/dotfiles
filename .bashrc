@@ -134,3 +134,11 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd ../..'
+
+
+# fish
+# If not running interactively, don't do anything
+case $- in
+    *i*) exec fish;;
+      *) return;;
+esac
