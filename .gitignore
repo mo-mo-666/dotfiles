@@ -1,0 +1,20 @@
+# vim
+*.swp
+# emacs
+*~
+#VScode
+.vscode
+# Mac
+.DS_Store
+
+.bundle/cache
+.config/*
+
+# whitelist
+!.config/git
+!.config/fish
+.config/fish/completions
+.config/fish/conf.d
+.config/fish/functions/*
+.config/fish/fish_variables
+.config/fish/fishfile
