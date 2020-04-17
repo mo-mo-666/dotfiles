@@ -1,5 +1,8 @@
 #!/bin/bash
+# -----------------------
 # Link dotfiles under ~.
+# -----------------------
+
 
 DOT_DIRECTORY="${HOME}/dotfiles"
 MODE=${1}
@@ -36,3 +39,11 @@ done
 if [ "$MODE" = "$force_mode" -o ! -e "${HOME}/.config/fish/config.fish" ] ; then
     ln -snfv "$DOT_DIRECTORY/.config/fish/config.fish" "$HOME/.config/fish/config.fish"
 fi
+
+cd "$DOT_DIRECTORY/.config/git"
+for f in *
+do
+    if [ "$MODE" = "$force_mode" -o ! -e "${HOME}/.config/git/${f}" ] ; then
+    ln -snfv "$DOT_DIRECTORY/.config/git/$f" "$HOME/.config/git/$f"
+    fi
+done
