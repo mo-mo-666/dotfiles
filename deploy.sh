@@ -4,7 +4,7 @@
 # -----------------------
 
 
-DOT_DIRECTORY="${HOME}/dotfiles"
+DOT_DIRECTORY="${HOME}/dotfiles/dotfiles"
 MODE=${1}
 MODE=${MODE:="normal"}
 force_mode="force"
