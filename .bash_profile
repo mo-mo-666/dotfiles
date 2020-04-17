@@ -17,6 +17,9 @@ fi
 if [ -d "/home/linuxbrew/.linuxbrew" ] ; then
     eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 fi
+if [ -d "$HOME/.linuxbrew" ] ; then
+    eval $($HOME/.linubrew/bin/brew shellenv)
+fi
 # nodebrew
 if [ -d "$HOME/.nodebrew/current/bin" ] ; then
     export PATH="$HOME/.nodebrew/current/bin:$PATH"
@@ -33,7 +36,6 @@ if [ -d "$HOME/.pyenv/bin" ] ; then
 fi
 # Pipenv
 export PIPENV_VENV_IN_PROJECT=true
-
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then

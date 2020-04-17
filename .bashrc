@@ -129,9 +129,9 @@ alias gmg='git merge'
 alias gps='git push'
 alias gst='git status'
 
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
+# alias rm='rm -i'
+# alias mv='mv -i'
+# alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd ../..'
 
