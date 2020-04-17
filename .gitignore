@@ -8,13 +8,13 @@
 .DS_Store
 
 .bundle/cache
-.config/*
+dotfiles/.config/*
 
 # whitelist
-!.config/git
-!.config/fish
-.config/fish/completions
-.config/fish/conf.d
-.config/fish/functions/*
-.config/fish/fish_variables
-.config/fish/fishfile
+!dotfiles/.config/git
+!dotfiles/.config/fish
+dotfiles/.config/fish/completions
+dotfiles/.config/fish/conf.d
+dotfiles/.config/fish/functions/*
+dotfiles/.config/fish/fish_variables
+dotfiles/.config/fish/fishfile
