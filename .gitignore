@@ -8,13 +8,8 @@
 .DS_Store
 
 .bundle/cache
-dotfiles/.config/*
 
-# whitelist
-!dotfiles/.config/git
-!dotfiles/.config/fish
-dotfiles/.config/fish/completions
-dotfiles/.config/fish/conf.d
-dotfiles/.config/fish/functions/*
-dotfiles/.config/fish/fish_variables
-dotfiles/.config/fish/fishfile
+dotfiles/*
+!dotfiles/README.md
+backup/*
+!backup/README.md
