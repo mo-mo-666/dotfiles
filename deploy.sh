@@ -21,11 +21,11 @@ link_file()
         if [ "$MODE" = "$force_mode" ] ; then
             mkdir -p $(dirname $3)
             mv -fv $2 $3
-            mkdir $(dirname $1)
+            mkdir $(dirname $2)
             ln -snfv $1 $2
         fi
     else
-        mkdir $(dirname $1)
+        mkdir $(dirname $2)
         ln -snfv $1 $2
     fi
 }
