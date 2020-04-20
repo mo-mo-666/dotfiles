@@ -4,19 +4,22 @@
 # execute './deploy.sh' for normal node and './deploy.sh force' for force mode.
 # -----------------------
 
-# Stop all if some error or undefined variable ocurred.
+
+# Stop all if some error ocurred or undefined variable catched.
 set -eu
 . ./common.sh
 
+set +u
 MODE=${1}
 MODE=${MODE:="normal"}
 force_mode="force"
+set -u
 
 link_file()
 {
     if [ -f "$2" ] && [ ! -L "$2" ] ; then
         if [ "$MODE" = "$force_mode" ] ; then
-            mkdir -p $(dirname $2)
+            mkdir -p $(dirname $3)
             mv -fv $2 $3
             ln -snfv $1 $2
         fi
