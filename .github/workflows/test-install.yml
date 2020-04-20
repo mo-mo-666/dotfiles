@@ -10,7 +10,7 @@ on:
       - master
       - develop
   pull_request:
-    branches: 
+    branches:
       - master
       - develop
 
@@ -33,6 +33,8 @@ jobs:
 # Runs a set of commands using the runners shell
     - name: Install all
       run: |
-        mkdir ${HOME}/dotfiles
-        mv -vf ${GITHUB_WORKSPACE} ${HOME}/dotfiles
+        echo ${GITHUB_WORKSPACE}
+        ls ${GITHUB_WORKSPACE}
+        ls ${GITHUB_WORKSPACE}/dotfiles/
+        mv -vf ${GITHUB_WORKSPACE}/dotfiles ${HOME}/dotfiles
         ./install.sh
