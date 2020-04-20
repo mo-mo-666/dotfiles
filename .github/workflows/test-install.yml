@@ -33,6 +33,6 @@ jobs:
 # Runs a set of commands using the runners shell
     - name: Install all
       run: |
-        mv -vf ${GITHUB_WORKSPACE}/dotfiles ${HOME}/dotfiles
+        mv -vf ${GITHUB_WORKSPACE} ${HOME}/dotfiles
         cd ${HOME}/dotfiles
         ./install.sh
