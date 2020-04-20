@@ -3,7 +3,7 @@
 # Common variables.
 # ------------------
 
-set -xeu
+set -eu
 DIR_NAME="${HOME}/dotfiles"
 DOT_DIR__="${DIR_NAME}/_dotfiles"
 DOT_DIR="${DIR_NAME}/dotfiles"
