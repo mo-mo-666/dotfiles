@@ -18,8 +18,8 @@ cd ${DIR_NAME}
 
 ### This must be exexute first.
 ### ------------------------------
+
 cd ${HOME}
-sudo chsh $USER -s $(which bash)
 . ${HOME}/.bash_profile
 
 ### apt
@@ -41,4 +41,9 @@ set_poetry
 
 ### ------------------------------
 ### restart shell
+
+if [ "$OS_BASE" = "$OS_MAC" ] ; then
+    chsh -s $(which bash)
+elif [ "$OS_BASE" = "$OS_LINUX" ] || [ "$OS_BASE" = "$OS_WSL" ] ; then
+    sudo chsh $USER -s $(which bash)
 exec $SHELL

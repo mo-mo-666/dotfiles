@@ -32,7 +32,7 @@ link_file()
 
 
 cd $DOT_DIR
-for f in `find -type f`
+for f in `find . -type f`
 do
     g=${f:2}
     [ "$g" = "README.md" ] && continue
@@ -41,7 +41,7 @@ do
 done
 
 cd $DOT_DIR__
-for f in `find -type f`
+for f in `find . -type f`
 do
     g=${f:2}
     if [ ! -e "$DOT_DIR/$g" ] ; then
