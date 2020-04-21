@@ -36,6 +36,8 @@ set_brew()
     brew upgrade
 
     installs=(
+        'bash'
+        'bash-completion'
         'git'
         'readline'
         'curl'

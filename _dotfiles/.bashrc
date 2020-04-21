@@ -128,6 +128,8 @@ alias gft='git fetch'
 alias gmg='git merge'
 alias gps='git push'
 alias gst='git status'
+alias gsw='git switch'
+alias grs='git restore'
 
 # alias rm='rm -i'
 # alias mv='mv -i'

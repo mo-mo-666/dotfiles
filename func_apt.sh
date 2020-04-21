@@ -16,6 +16,7 @@ set_apt()
     sudo apt autoremove -y
 
     installs=(
+        'bash'
         'bash-completion'
         'build-essential'
         'file'
