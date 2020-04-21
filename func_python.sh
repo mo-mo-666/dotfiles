@@ -3,10 +3,6 @@
 # Set up Python.
 # -----------------
 
-set -xeu
-# . ./common.sh
-cd ${HOME}
-
 set_pyenv()
 {
     if type "pyenv" > /dev/null 2>&1; then

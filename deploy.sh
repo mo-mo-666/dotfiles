@@ -7,18 +7,24 @@
 
 # Stop all if some error ocurred or undefined variable catched.
 set -eu
-. ./common.sh
 
 set +u
-MODE=${1}
-MODE=${MODE:="normal"}
+DIR_NAME="${HOME}/dotfiles"
+DOT_DIR__="${DIR_NAME}/_dotfiles"
+DOT_DIR="${DIR_NAME}/dotfiles"
+BACKUP_DIR="${DIR_NAME}/backup"
+
+DEPLOY_MODE=${1}
+DEPLOY_MODE=${DEPLOY_MODE:="normal"}
 force_mode="force"
 set -u
+
+cd ${DIR_NAME}
 
 link_file()
 {
     if [ -f "$2" ] && [ ! -L "$2" ] ; then
-        if [ "$MODE" = "$force_mode" ] ; then
+        if [ "$DEPLOY_MODE" = "$force_mode" ] ; then
             mkdir -p $(dirname $3)
             mv -fv $2 $3
             mkdir -p $(dirname $2)
@@ -50,4 +56,4 @@ do
 done
 
 
-cd $DIR_NAME
+cd ${DIR_NAME}

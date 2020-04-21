@@ -3,9 +3,6 @@
 # Set up fish.
 # ---------------------
 
-set -xeu
-# . ./common.sh
-
 set_fish()
 {
     if type "fish" > /dev/null 2>&1; then

@@ -3,9 +3,6 @@
 # apt for Linux or WSL.
 # ----------------------
 
-set -xeu
-# . ./common.sh
-
 set_apt()
 {
     if [ "$OS_BASE" = "$OS_MAC" ] ; then
@@ -40,6 +37,8 @@ set_apt()
         'liblzma-dev'
         'python-openssl'
         'git'
+        'language-pack-ja'
     )
     sudo apt install -y ${installs[@]}
+    sudo update-locale LANG='ja_JP.UTF-8'
 }

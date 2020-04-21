@@ -3,8 +3,6 @@
 # Set up Homebrew or Linuxbrew.
 # ---------------------
 
-set -xeu
-# . ./common.sh
 
 set_brew()
 {
@@ -47,7 +45,7 @@ set_brew()
         'sqlite'
         'bzip2'
         'autoconf'
-        'gbdm'
+        'gdbm'
     )
     brew install ${installs[@]}
 }
