@@ -7,6 +7,7 @@ set_fish()
 {
     if type "fish" > /dev/null 2>&1; then
         echo "'fish' is already installed."
+    else
         if type "brew" > /dev/null 2>&1; then
             brew install 'fish'
         else
