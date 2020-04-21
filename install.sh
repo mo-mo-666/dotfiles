@@ -4,6 +4,10 @@
 # ---------------------
 
 set -xeu
+
+DIR_NAME="${HOME}/dotfiles"
+cd ${DIR_NAME}
+
 # . ./common.sh
 . ./deploy.sh force
 
@@ -14,7 +18,8 @@ set -xeu
 
 ### This must be exexute first.
 ### ------------------------------
-chsh -s /bin/bash
+cd ${HOME}
+sudo chsh $USER -s $(which bash)
 . ${HOME}/.bash_profile
 
 ### apt
