@@ -5,8 +5,7 @@
 
 set -xeu
 . ./common.sh
-. ./deploy.sh
-exec $SHELL
+. ./deploy.sh force
 
 . ./func_apt.sh
 . ./func_brew.sh
@@ -15,6 +14,9 @@ exec $SHELL
 
 ### This must be exexute first.
 ### ------------------------------
+chsh -s /bin/bash
+. ${HOME}/.bash_profile
+
 ### apt
 set_apt
 
