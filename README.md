@@ -1,4 +1,4 @@
-# dotfiles
+# mo-mo-'s Dotfiles
 ![Install Mac](https://github.com/mo-mo-666/dotfiles/workflows/Install%20Mac/badge.svg)
 ![Install Linux Normal](https://github.com/mo-mo-666/dotfiles/workflows/Install%20Linux%20Normal/badge.svg)
 ![Install Linuxbrew](https://github.com/mo-mo-666/dotfiles/workflows/Install%20Linuxbrew/badge.svg)
@@ -7,10 +7,10 @@ Deploy and Initialize for Mac, Linux(Ubuntu), and WSL(Ubuntu).
 
 ## 用語
 
-#### deploy
+### deploy
 dotfiles にリンクを張ること。`dotfiles.sh` に対応。
 
-#### initialize
+### initialize
 インストール・初期設定すべて行うこと。`install.sh` に対応。
 
 ## インストール
@@ -19,20 +19,20 @@ cd ~
 git clone https://github.com/mo-mo-666/dotfiles.git
 cd dotfiles
 ```
-
-#### 注意
-**このリポジトリは ${HOME}直下におかれることを想定しています。**
+git がない場合は他のツールを使うか，git をインストールしてから実行するとよい。
+### 注意
+**このリポジトリは `${HOME}`直下におかれることを想定している。**
 
 ## ディレクトリ構成
 
-#### `_dotfiles/`
+### `_dotfiles/`
 各マシン共通で使う dotfile を置く場所。
 
-#### `dotfiles/`
+### `dotfiles/`
 個々のマシン独自の設定をする dotfile を置く場所。`_dotfiles` より優先的に読み込まれる。
 Git の管理外になる。
 
-#### `backup/`
+### `backup/`
 `dotfiles.sh` を強制実行したときに，もともとあった dotfiles のバックアップをとる場所。
 Git の管理外になる。
 
