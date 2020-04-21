@@ -36,3 +36,4 @@ jobs:
         mv -vf ${GITHUB_WORKSPACE} ${HOME}/dotfiles
         cd ${HOME}/dotfiles
         ./install.sh
+        mv -vf ${HOME}/dotfiles ${GITHUB_WORKSPACE}
