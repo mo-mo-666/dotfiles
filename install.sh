@@ -4,7 +4,7 @@
 # ---------------------
 
 set -xeu
-. ./common.sh
+# . ./common.sh
 . ./deploy.sh force
 
 . ./func_apt.sh

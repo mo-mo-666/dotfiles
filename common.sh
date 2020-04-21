@@ -9,6 +9,9 @@ DOT_DIR__="${DIR_NAME}/_dotfiles"
 DOT_DIR="${DIR_NAME}/dotfiles"
 BACKUP_DIR="${DIR_NAME}/backup"
 
+
+cd ${DIR_NAME}
+
 # OS recognition
 OS_MAC="Mac"
 OS_WSL="WSL"

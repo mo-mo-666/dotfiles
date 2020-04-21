@@ -48,3 +48,6 @@ do
         link_file "$DOT_DIR__/$g" "$HOME/$g" "$BACKUP_DIR/$g"
     fi
 done
+
+
+cd $DIR_NAME
