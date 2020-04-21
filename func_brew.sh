@@ -20,7 +20,7 @@ set_brew()
         elif [ -d "$HOME/linuxbrew/.linuxbrew" ] ; then
             echo "'Linuxbrew' is already installed, but not set PATH."
             eval $($HOME/.linuxbrew/bin/brew shellenv)
-        elif [ -d "/home/linuxbrew/.linuxbrew" ] |; then
+        elif [ -d "/home/linuxbrew/.linuxbrew" ] ; then
             echo "'Linuxbrew' is already installed, but not set PATH."
             eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
         else
