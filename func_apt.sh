@@ -12,7 +12,6 @@ set_apt()
 
     sudo apt update
     sudo apt upgrade -y
-    sudo apt dist-update -y
     sudo apt autoremove -y
 
     installs=(
