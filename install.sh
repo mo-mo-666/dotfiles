@@ -73,13 +73,13 @@ cd ${HOME}
 ### apt
 if [ "$INSTALL_MODE" = "$install_apt" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
     set_apt
-
+fi
 . ${HOME}/.bash_profile
 
 ### brew
 if [ "$INSTALL_MODE" = "$install_mac" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
-set_brew
-
+    set_brew
+fi
 ### -------------------------------------------
 ### fish
 set_fish
@@ -96,6 +96,7 @@ set_poetry
 
 if [ "$OS_BASE" = "$OS_MAC" ] ; then
     chsh -s /bin/bash
-elif [ "$OS_BASE" = "$OS_LINUX" ] || [ "$OS_BASE" = "$OS_WSL" ] ; then
+else
     sudo chsh $USER -s /bin/bash
+fi
 exec $SHELL
