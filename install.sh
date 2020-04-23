@@ -81,8 +81,6 @@ if [ "$INSTALL_MODE" = "$install_mac" ] || [ "$INSTALL_MODE" = "$install_linuxbr
     set_brew
 fi
 ### -------------------------------------------
-### fish
-set_fish
 
 
 ### Python
@@ -90,6 +88,8 @@ set_pyenv
 set_pipenv
 set_poetry
 
+### fish
+set_fish
 
 ### restart shell
 ### -------------------------------------
