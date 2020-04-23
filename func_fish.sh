@@ -29,9 +29,9 @@ set_fish()
             'sentriz/fish-pipenv'
             'daenney/pyenv'
         )
-        for ins in ${fisher_installes[@]}
+        for inst in ${fisher_installes[@]}
         do
-            fish -C "fisher add ${ins}"
+            fish -C "fisher add ${inst}"
         done
     fi
 }
