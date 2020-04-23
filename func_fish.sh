@@ -21,17 +21,17 @@ set_fish()
         echo "'fisher' is already installed."
     else
         curl "https://git.io/fisher" --create-dirs -sLo "~/.config/fish/functions/fisher.fish"
+        local fisher_installes=(
+            'edc/bass'
+            'jethrokuan/z'
+            'jorgebucaran/fish-bax'
+            'oh-my-fish/theme-bobthefish'
+            'sentriz/fish-pipenv'
+            'daenney/pyenv'
+        )
+        for ins in ${fisher_installes[@]}
+        do
+            fish -C "fisher add ${ins}"
+        done
     fi
-    local fisher_installes=(
-        'edc/bass'
-        'jethrokuan/z'
-        'jorgebucaran/fish-bax'
-        'oh-my-fish/theme-bobthefish'
-        'sentriz/fish-pipenv'
-        'daenney/pyenv'
-    )
-    for ins in ${fisher_installes[@]}
-    do
-        fish -c "fisher add ${ins}"
-    done
 }
