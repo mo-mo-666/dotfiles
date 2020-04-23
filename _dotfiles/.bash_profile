@@ -2,6 +2,10 @@
 export LANG=ja_JP.UTF-8
 export LANGUAGE="ja_JP:ja"
 
+# editor
+export EDITOR=/usr/bin/vim.basic
+
+
 # If WSL
 if [ -d "/mnt/c/Windows/System32" ] ; then
     # WindowsPath
