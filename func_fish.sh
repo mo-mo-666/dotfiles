@@ -31,7 +31,7 @@ set_fish()
         )
         for ins in ${fisher_installes[@]}
         do
-            exec fish -C "fisher add ${ins}"
+            fish -C "fisher add ${ins}"
         done
     fi
 }
