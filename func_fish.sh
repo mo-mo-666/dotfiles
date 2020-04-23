@@ -20,7 +20,7 @@ set_fish()
     if type "fisher" > /dev/null 2>&1; then
         echo "'fisher' is already installed."
     else
-        curl "https://git.io/fisher" --create-dirs -sLo "~/.config/fish/functions/fisher.fish"
+        curl "https://git.io/fisher" --create-dirs -sLo "${HOME}/.config/fish/functions/fisher.fish"
         local fisher_installes=(
             'edc/bass'
             'jethrokuan/z'
