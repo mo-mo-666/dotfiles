@@ -1,7 +1,7 @@
 # mo-mo-'s Dotfiles
-![Install Mac](https://github.com/mo-mo-666/dotfiles/workflows/Install%20Mac/badge.svg)
-![Install Linux Normal](https://github.com/mo-mo-666/dotfiles/workflows/Install%20Linux%20Normal/badge.svg)
-![Install Linuxbrew](https://github.com/mo-mo-666/dotfiles/workflows/Install%20Linuxbrew/badge.svg)
+![Install Mac](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Mac/badge.svg)
+![Install Linux Normal](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Linux%20Normal/badge.svg)
+![Install Linuxbrew](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Linuxbrew/badge.svg)
 
 Deploy and Initialize for Mac, Linux(Ubuntu), and WSL(Ubuntu).
 
