@@ -35,19 +35,10 @@ set_brew()
     brew update
     brew upgrade
 
-    installs=(
-        'bash'
-        'bash-completion'
-        'git'
-        'readline'
-        'curl'
-        'zlib'
-        'xz'
-        'perl'
-        'sqlite'
-        'bzip2'
-        'autoconf'
-        'gdbm'
-    )
-    brew install ${installs[@]}
+    if [ "$OS_BASE" = "$OS_MAC" ] ; then
+        brew bundle --file="${DIR_NAME}/Brewfile_mac"
+
+    elif [ "$OS_BASE" = "$OS_LINUX" ] || [ "$OS_BASE" = $OS_WSL ] ; then
+        brew bundle --file="${DIR_NAME}/Brewfile_ubuntu"
+    fi
 }
