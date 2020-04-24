@@ -13,11 +13,10 @@ set_pyenv()
         else
             git clone "https://github.com/pyenv/pyenv.git" "${HOME}/.pyenv"
         fi
-        export PYENV_ROOT="$HOME/.pyenv"
-        export PATH="$PYENV_ROOT/bin:$PATH"
-        eval "$(pyenv init -)"
     fi
-
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
     pyenv install -sv '3.7.7'
     pyenv global '3.7.7'
     pip install --upgrade 'pip'
