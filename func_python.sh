@@ -17,7 +17,7 @@ set_pyenv()
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
-    pyenv install -sv '3.7.7'
+    pyenv install -s '3.7.7'
     pyenv global '3.7.7'
     pip install --upgrade 'pip'
     local pip_installs=(
@@ -36,7 +36,8 @@ set_pipenv()
         if type "brew" > /dev/null 2>&1; then
             brew install 'pipenv'
         else
-            sudo apt install -y 'pipenv'
+            # sudo apt install -y 'pipenv'
+            pip install --user --upgrade 'pipenv'
         fi
     fi
 }
