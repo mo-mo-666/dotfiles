@@ -16,15 +16,17 @@ set_pyenv()
         export PYENV_ROOT="$HOME/.pyenv"
         export PATH="$PYENV_ROOT/bin:$PATH"
         eval "$(pyenv init -)"
-        pyenv global '3.7.7'
-        pip install --upgrade 'pip'
-        local pip_installs=(
-            'autopep8'
-            'black'
-            'pylint'
-        )
-        pip install --user --upgrade ${pip_installs[@]}
     fi
+
+    pyenv install -sv '3.7.7'
+    pyenv global '3.7.7'
+    pip install --upgrade 'pip'
+    local pip_installs=(
+        'autopep8'
+        'black'
+        'pylint'
+    )
+    pip install --user --upgrade ${pip_installs[@]}
 }
 
 set_pipenv()

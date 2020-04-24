@@ -93,10 +93,4 @@ set_fish
 
 ### restart shell
 ### -------------------------------------
-
-if [ "$OS_BASE" = "$OS_MAC" ] ; then
-    chsh -s /bin/bash
-else
-    sudo chsh $USER -s /bin/bash
-fi
 exec $SHELL
