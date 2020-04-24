@@ -1,0 +1,15 @@
+# vim
+*.swp
+# emacs
+*~
+#VScode
+.vscode
+# Mac
+.DS_Store
+
+.bundle/cache
+
+dotfiles/*
+!dotfiles/README.md
+backup/*
+!backup/README.md
