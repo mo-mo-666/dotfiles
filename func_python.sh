@@ -48,6 +48,8 @@ set_poetry()
         echo "'poetry is already installed."
     else
         curl -sSL "https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py" | python
+        export PATH="$HOME/.poetry/bin:$PATH"
+        poetry config virtualenvs.in-project true
     fi
 
 }
