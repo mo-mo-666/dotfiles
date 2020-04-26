@@ -57,7 +57,7 @@ Git の管理外になる。
 ./deploy.sh force
 ```
 
-## `initialize.sh`
+## `install.sh`
 
 デプロイからライブラリのインストール・初期設定まですべて行う。
 
