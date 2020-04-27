@@ -64,19 +64,19 @@ Git の管理外になる。
 - Mac のとき
 
 ```bash
-./initialize.sh mac
+./install.sh mac
 ```
 
 - Linux or WSL (Ubuntu) + 標準インストールのとき
 
 ```bash
-./initialize.sh linux_normal
+./install.sh linux_normal
 ```
 
 - Linux or WSL (Ubuntu) + Linuxbrew のとき
 
 ```bash
-./initialize.sh linuxbrew
+./install.sh linuxbrew
 ```
 
 内部でも OS 判定を行っているので，それと一致していないとエラーになる。
