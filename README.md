@@ -8,7 +8,7 @@ Deploy and Initialize for Mac, Linux(Ubuntu), and WSL(Ubuntu).
 ## 用語
 
 ### deploy
-dotfiles にリンクを張ること。`dotfiles.sh` に対応。
+dotfiles にリンクを張ること。`deploy.sh` に対応。
 
 ### initialize
 インストール・初期設定すべて行うこと。`install.sh` に対応。

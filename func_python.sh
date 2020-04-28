@@ -36,7 +36,7 @@ set_pipenv()
         if type "brew" > /dev/null 2>&1; then
             brew install 'pipenv'
         else
-            # sudo apt install -y 'pipenv'
+            # sudo apt-getinstall -y 'pipenv'
             pip install --user --upgrade 'pipenv'
         fi
     fi
