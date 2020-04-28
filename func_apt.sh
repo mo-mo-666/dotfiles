@@ -10,9 +10,9 @@ set_apt()
         return
     fi
 
-    sudo apt update
-    sudo apt upgrade -y
-    sudo apt autoremove -y
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt-get autoremove -y
 
     installs=(
         'bash'
@@ -39,6 +39,6 @@ set_apt()
         'git'
         'language-pack-ja'
     )
-    sudo apt install -y ${installs[@]}
+    sudo apt-get install -y ${installs[@]}
     sudo update-locale LANG='ja_JP.UTF-8'
 }
