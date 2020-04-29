@@ -41,7 +41,7 @@ if [ -d "$HOME/.pyenv" ] ; then
     fi
 fi
 # Pipenv
-if type "pyenv" > /dev/null 2>&1; then
+if type "pipenv" > /dev/null 2>&1; then
     export PIPENV_VENV_IN_PROJECT=true
     eval "$(pipenv --completion)"
 fi
