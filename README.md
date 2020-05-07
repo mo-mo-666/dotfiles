@@ -2,6 +2,7 @@
 ![Install Mac](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Mac/badge.svg)
 ![Install Linux Normal](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Linux%20Normal/badge.svg)
 ![Install Linuxbrew](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Linuxbrew/badge.svg)
+![Install on Windows](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Windows/badge.svg)
 
 Deploy and Initialize for Mac, Linux(Ubuntu), and WSL(Ubuntu).
 
@@ -84,3 +85,16 @@ Git の管理外になる。
 
 ## `func_*.sh`
 基本的に単独実行は想定していないので実行しないこと。
+
+## Windowsについて
+
+Windows は現時点で，Chocolatey によるインストールのみ対応している。
+`Chocofile.config` のみを適切な位置に配置し，管理者権限の PowerShell で以下を実行。
+```powershell
+# See chocolatey official web site.
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+cd <path to the directory of Chocofile.config>
+choco install -y Chocofile.config
+```
+
+メモ： [インストール時に --ignore-checksums オプションを付けないとうまくいかないものがある。](https://www.gep13.co.uk/blog/chocolatey-error-hashes-do-not-match)
