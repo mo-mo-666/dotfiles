@@ -14,7 +14,7 @@ if [ -d "/mnt/c/Windows/System32" ] ; then
     export PATH="$PATH:/mnt/c/Program Files (x86)/Google/Chrome/Application"
     export BROWSER=chrome.exe
     # VSCode
-    export PATH="$PATH:/mnt/c/Users/mo-mo-/AppData/Local/Programs/Microsoft VS Code/bin"
+    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/mo-mo-/AppData/Local/Programs/Microsoft VS Code/bin"
 fi
 
 # linuxbrew
