@@ -1,3 +1,4 @@
 {
-    "git.path": "/home/linuxbrew/.linuxbrew/bin/git"
+    "git.path": "/home/linuxbrew/.linuxbrew/bin/git",
+    "python.formatting.autopep8Path": "/home/mo-mo-/.local/bin/autopep8"
 }

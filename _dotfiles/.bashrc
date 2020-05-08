@@ -130,6 +130,7 @@ alias gps='git push'
 alias gst='git status'
 alias gsw='git switch'
 alias grs='git restore'
+alias gmv='git mv'
 
 # alias rm='rm -i'
 # alias mv='mv -i'
