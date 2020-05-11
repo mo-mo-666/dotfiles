@@ -98,3 +98,19 @@ choco install -y Chocofile.config
 ```
 
 メモ： [インストール時に --ignore-checksums オプションを付けないとうまくいかないものがある。](https://www.gep13.co.uk/blog/chocolatey-error-hashes-do-not-match)
+
+## バックアップバッケージの更新方法
+- Mac
+```bash
+cd ~/dotfiles
+brew bundle dump -f --file=Brewfile_mac
+```
+
+- Linuxbrew
+```bash
+cd ~/dotfiles
+brew bundle dump -f --file=Brewfile_ubuntu
+```
+
+- Windows
+Chocolatey GUI を起動し右上のパッケージ保存ボタンから `.xml` ファイルを出力，それを `~/dotfiles` 以下に保存。
