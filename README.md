@@ -113,4 +113,5 @@ brew bundle dump -f --file=Brewfile_ubuntu
 ```
 
 - Windows
+
 Chocolatey GUI を起動し右上のパッケージ保存ボタンから `.xml` ファイルを出力，それを `~/dotfiles` 以下に保存。
