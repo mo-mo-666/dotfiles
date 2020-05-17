@@ -466,7 +466,7 @@ modifyLineBreaks:
             questionMark: 1
             other: 0
     textWrapOptions:
-        columns: 0
+        columns: 88
         separator: ""
         perCodeBlockBasis: 0
         all: 0
