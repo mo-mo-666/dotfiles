@@ -1,5 +1,5 @@
 {
     "git.path": "/home/linuxbrew/.linuxbrew/bin/git",
-    "python.formatting.autopep8Path": "/home/mo-mo-/.local/bin/autopep8",
-    "python.formatting.blackPath": "/home/mo-mo-/.local/bin/black"
+    "python.formatting.autopep8Path": "${env:HOME}/.pyenv/shims/autopep8",
+    "python.formatting.blackPath": "${env:HOME}/.pyenv/shims/black"
 }
