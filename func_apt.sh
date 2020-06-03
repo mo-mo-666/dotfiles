@@ -38,6 +38,7 @@ set_apt()
         'python-openssl'
         'git'
         'language-pack-ja'
+        'vim'
     )
     sudo apt-get install -y ${installs[@]}
     sudo update-locale LANG='ja_JP.UTF-8'
