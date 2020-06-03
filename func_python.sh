@@ -25,7 +25,7 @@ set_pyenv()
         'black'
         'pylint'
     )
-    pip install --user --upgrade ${pip_installs[@]}
+    pip install --upgrade ${pip_installs[@]}
 }
 
 set_pipenv()
@@ -37,7 +37,7 @@ set_pipenv()
             brew install 'pipenv'
         else
             # sudo apt-getinstall -y 'pipenv'
-            pip install --user --upgrade 'pipenv'
+            pip install --upgrade 'pipenv'
         fi
     fi
 }

@@ -176,6 +176,7 @@ TabSize = 8
 CmdLine
 {
     -n8  # For '--'
+    -n6  # For Japanese
     -n19  # For Japanese
 }
 
