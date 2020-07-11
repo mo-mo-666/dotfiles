@@ -3,3 +3,7 @@
 	email = mo-mo-666.pu_ki@outlook.com
 [core]
 	autocrlf = input
+	quotepath = false
+	editor = vim
+[color]
+	ui = true

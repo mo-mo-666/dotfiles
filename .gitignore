@@ -13,3 +13,6 @@ dotfiles/*
 !dotfiles/README.md
 backup/*
 !backup/README.md
+
+Brewfile_ubuntu.lock.json
+Brewfile_mac.lock.json
