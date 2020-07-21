@@ -75,7 +75,6 @@ cd ${HOME}
 if [ "$INSTALL_MODE" = "$install_apt" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
     set_apt
 fi
-. ${HOME}/.bash_profile
 
 ### brew
 if [ "$INSTALL_MODE" = "$install_mac" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
