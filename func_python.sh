@@ -33,7 +33,7 @@ set_pipenv()
     if type "pipenv" > /dev/null 2>&1; then
         echo "'pipenv' is already installed."
     else
-        if [ "$INSTL_MODE" = "$install_apt" ] ; then
+        if [ "$INSTALL_MODE" = "$install_apt" ] ; then
             # sudo apt-getinstall -y 'pipenv'
             pip install --upgrade 'pipenv'
         else
