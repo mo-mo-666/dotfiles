@@ -11,5 +11,5 @@ set_fonts()
     fi
 
     sudo apt install -y fonts-ipaexfont
-    fc-cashe -fv
+    fc-cache -fv
 }
