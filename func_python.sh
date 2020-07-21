@@ -8,10 +8,10 @@ set_pyenv()
     if type "pyenv" > /dev/null 2>&1; then
         echo "'pyenv' is already installed."
     else
-        if type "brew" > /dev/null 2>&1; then
-            brew install 'pyenv'
-        else
+        if [ "$INSTALL_MODE" = "$install_apt" ] ; then
             git clone "https://github.com/pyenv/pyenv.git" "${HOME}/.pyenv"
+        else
+            brew install 'pyenv'
         fi
     fi
     export PYENV_ROOT="$HOME/.pyenv"
@@ -33,11 +33,11 @@ set_pipenv()
     if type "pipenv" > /dev/null 2>&1; then
         echo "'pipenv' is already installed."
     else
-        if type "brew" > /dev/null 2>&1; then
-            brew install 'pipenv'
-        else
+        if [ "$INSTL_MODE" = "$install_apt" ] ; then
             # sudo apt-getinstall -y 'pipenv'
             pip install --upgrade 'pipenv'
+        else
+            brew install 'pipenv'
         fi
     fi
 }

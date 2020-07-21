@@ -8,12 +8,12 @@ set_fish()
     if type "fish" > /dev/null 2>&1; then
         echo "'fish' is already installed."
     else
-        if type "brew" > /dev/null 2>&1; then
-            brew install 'fish'
-        else
+        if [ "$INSTALL_MODE" = "$install_apt" ] ; then
             sudo apt-add-repository 'ppa:fish-shell/release-3'
             sudo apt-get update
             sudo apt-get install -y 'fish'
+        else
+            brew install 'fish'
         fi
     fi
 
