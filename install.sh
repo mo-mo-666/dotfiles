@@ -63,6 +63,7 @@ cd ${DIR_NAME}
 . ./func_brew.sh
 . ./func_fish.sh
 . ./func_python.sh
+. ./func_fonts.sh
 
 ### ----------------------------------------------
 
@@ -90,6 +91,9 @@ set_poetry
 
 ### fish
 set_fish
+
+### fonts
+set_fonts
 
 ### restart shell
 ### -------------------------------------
