@@ -4,6 +4,7 @@
 # ---------------------
 
 set -xeu
+echo $PATH
 
 ### constant value
 ### --------------------------------------------
@@ -63,6 +64,7 @@ cd ${DIR_NAME}
 . ./func_brew.sh
 . ./func_fish.sh
 . ./func_python.sh
+. ./func_fonts.sh
 
 ### ----------------------------------------------
 
@@ -74,7 +76,6 @@ cd ${HOME}
 if [ "$INSTALL_MODE" = "$install_apt" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
     set_apt
 fi
-. ${HOME}/.bash_profile
 
 ### brew
 if [ "$INSTALL_MODE" = "$install_mac" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
@@ -90,6 +91,9 @@ set_poetry
 
 ### fish
 set_fish
+
+### fonts
+set_fonts
 
 ### restart shell
 ### -------------------------------------
