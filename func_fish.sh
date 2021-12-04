@@ -30,5 +30,5 @@ set_fish()
         'sentriz/fish-pipenv'
         'daenney/pyenv'
     )
-    fish -C "fisher add ${fisher_installes[@]}"
+    fish -C "fisher install ${fisher_installes[@]}"
 }
