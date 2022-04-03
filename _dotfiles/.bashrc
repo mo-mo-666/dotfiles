@@ -116,6 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# set pyenv
+if type "pyenv" > /dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
 
 # alias
 alias gbr='git branch'
