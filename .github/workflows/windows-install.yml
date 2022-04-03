@@ -27,4 +27,4 @@ jobs:
 
 # Runs a set of commands using the runners shell
     - name: Install all
-      run: choco install -y Chocofile.config
+      run: winget import winget-private.json

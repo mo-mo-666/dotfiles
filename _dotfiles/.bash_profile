@@ -13,6 +13,8 @@ if [ -d "/mnt/c/Windows/System32" ] ; then
     # Google chorome
     export PATH="$PATH:/mnt/c/Program Files (x86)/Google/Chrome/Application"
     export BROWSER=chrome.exe
+    # username
+    # export WIN_USER=$(/mnt/c/Windows/system32/cmd.exe /C 'echo %USERNAME%' | sed -e 's/\r//g')
     # VSCode
     export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/mo-mo-/AppData/Local/Programs/Microsoft VS Code/bin"
 fi
@@ -24,6 +26,7 @@ fi
 if [ -d "$HOME/.linuxbrew" ] ; then
     eval $($HOME/.linubrew/bin/brew shellenv)
 fi
+
 # nodebrew
 if [ -d "$HOME/.nodebrew/current/bin" ] ; then
     export PATH="$HOME/.nodebrew/current/bin:$PATH"
@@ -32,6 +35,7 @@ fi
 if [ -d "$HOME/.poetry/bin" ] ; then
     export PATH="$HOME/.poetry/bin:$PATH"
 fi
+
 # set pyenv
 if [ -d "$HOME/.pyenv" ] ; then
     export PYENV_ROOT="$HOME/.pyenv"
@@ -40,10 +44,11 @@ if [ -d "$HOME/.pyenv" ] ; then
         eval "$(pyenv init --path)"
     fi
 fi
+
 # Pipenv
 if type "pipenv" > /dev/null 2>&1; then
     export PIPENV_VENV_IN_PROJECT=true
-    eval "$(pipenv --completion)"
+    eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
 fi
 
 # set PATH so it includes user's private bin if it exists

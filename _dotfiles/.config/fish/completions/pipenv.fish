@@ -1,3 +1,3 @@
 if command -s pipenv > /dev/null
-    eval (pipenv --completion)
+    eval (env _PIPENV_COMPLETE=fish_source pipenv)
 end

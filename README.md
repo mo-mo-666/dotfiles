@@ -91,18 +91,12 @@ Git の管理外になる。
 ## `func_*.sh`
 基本的に単独実行は想定していないので実行しないこと。
 
-## Windowsについて
-
-Windows は現時点で，Chocolatey によるインストールのみ対応している。
-`Chocofile.config` のみを適切な位置に配置し，管理者権限の PowerShell で以下を実行。
+## Windows について
+Windows は `winget` を用いてインストールを行う。
 ```powershell
-# See chocolatey official web site.
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-cd <path to the directory of Chocofile.config>
-choco install -y Chocofile.config
+winget import winget-private.json
 ```
 
-メモ： [インストール時に --ignore-checksums オプションを付けないとうまくいかないものがある。](https://www.gep13.co.uk/blog/chocolatey-error-hashes-do-not-match)
 
 ## バックアップバッケージの更新方法
 - Mac
@@ -118,4 +112,6 @@ brew bundle dump -f --file=Brewfile_ubuntu
 ```
 
 - Windows  
-Chocolatey GUI を起動し右上のパッケージ保存ボタンから `.xml` ファイルを出力，それを `~/dotfiles` 以下に保存。
+```powershell
+winget export <出力ファイル名>
+```
