@@ -14,9 +14,9 @@ if [ -d "/mnt/c/Windows/System32" ] ; then
     export PATH="$PATH:/mnt/c/Program Files (x86)/Google/Chrome/Application"
     export BROWSER=chrome.exe
     # username
-    export WIN_USER=$(/mnt/c/Windows/system32/cmd.exe /C 'echo %USERNAME%' | sed -e 's/\r//g')
+    # export WIN_USER=$(/mnt/c/Windows/system32/cmd.exe /C 'echo %USERNAME%' | sed -e 's/\r//g')
     # VSCode
-    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/$WIM_USER/AppData/Local/Programs/Microsoft VS Code/bin"
+    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/mo-mo-/AppData/Local/Programs/Microsoft VS Code/bin"
 fi
 
 # linuxbrew
