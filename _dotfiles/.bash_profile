@@ -48,7 +48,7 @@ fi
 # Pipenv
 if type "pipenv" > /dev/null 2>&1; then
     export PIPENV_VENV_IN_PROJECT=true
-    eval "$(pipenv --completion)"
+    eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
 fi
 
 # set PATH so it includes user's private bin if it exists

@@ -36,8 +36,7 @@ set_pipenv()
         echo "'pipenv' is already installed."
     else
         if [ "$INSTALL_MODE" = "$install_apt" ] ; then
-            # sudo apt-getinstall -y 'pipenv'
-            pip install --upgrade 'pipenv'
+            sudo apt-get install -y 'pipenv'
         else
             brew install 'pipenv'
         fi
