@@ -1,6 +1,6 @@
 {
     "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-    "CreationDate": "2022-04-03T16:44:47.506-00:00",
+    "CreationDate": "2022-04-21T22:12:12.965-00:00",
     "Sources": [
         {
             "Packages": [
@@ -50,6 +50,9 @@
                     "PackageIdentifier": "Microsoft.Teams"
                 },
                 {
+                    "PackageIdentifier": "Microsoft.PowerToys"
+                },
+                {
                     "PackageIdentifier": "Python.Python.3"
                 },
                 {
@@ -80,6 +83,9 @@
                     "PackageIdentifier": "Microsoft.Teams"
                 },
                 {
+                    "PackageIdentifier": "Microsoft.dotnetRuntime.6-x64"
+                },
+                {
                     "PackageIdentifier": "Microsoft.VC++2008Redist-x86"
                 },
                 {
@@ -93,6 +99,9 @@
                 },
                 {
                     "PackageIdentifier": "Microsoft.VC++2010Redist-x86"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.dotnetRuntime.3-x64"
                 },
                 {
                     "PackageIdentifier": "Microsoft.VC++2013Redist-x64"
