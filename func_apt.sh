@@ -20,6 +20,7 @@ set_apt()
         'build-essential'
         'file'
         'make'
+        'gcc'
         'libssl-dev'
         'zlib1g-dev'
         'libbz2-dev'
