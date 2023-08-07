@@ -143,6 +143,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias linuxupdate='sudo apt update && sudo apt upgrade -y'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
+# If error, RUN  mkdir -p /home/linuxbrew/.linuxbrew/Cellar/linux-headers@4.4/4.4.302
 
 
 # fish

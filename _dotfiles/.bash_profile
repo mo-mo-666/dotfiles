@@ -26,6 +26,7 @@ fi
 if [ -d "$HOME/.linuxbrew" ] ; then
     eval $($HOME/.linubrew/bin/brew shellenv)
 fi
+export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 # nodebrew
 if [ -d "$HOME/.nodebrew/current/bin" ] ; then
