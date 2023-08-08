@@ -16,7 +16,7 @@ if [ -d "/mnt/c/Windows/System32" ] ; then
     # username
     # export WIN_USER=$(/mnt/c/Windows/system32/cmd.exe /C 'echo %USERNAME%' | sed -e 's/\r//g')
     # VSCode
-    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/mo-mo-/AppData/Local/Programs/Microsoft VS Code/bin"
+    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/takeda/AppData/Local/Programs/Microsoft VS Code/bin"
 fi
 
 # linuxbrew
@@ -61,6 +61,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
+# openssl@1.1
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib/pkgconfig"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then

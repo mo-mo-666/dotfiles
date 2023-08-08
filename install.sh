@@ -72,22 +72,22 @@ cd ${DIR_NAME}
 ### --------------------------------------------
 
 cd ${HOME}
-### apt
-if [ "$INSTALL_MODE" = "$install_apt" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
-    set_apt
-fi
+# ## apt
+# if [ "$INSTALL_MODE" = "$install_apt" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
+#     set_apt
+# fi
 
 ### brew
-if [ "$INSTALL_MODE" = "$install_mac" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
-    set_brew
-fi
+# if [ "$INSTALL_MODE" = "$install_mac" ] || [ "$INSTALL_MODE" = "$install_linuxbrew" ] ; then
+#     set_brew
+# fi
 ### -------------------------------------------
 
 
 ### Python
-set_pyenv
-set_pipenv
-set_poetry
+# set_pyenv
+# set_pipenv
+# set_poetry
 
 ### fish
 set_fish

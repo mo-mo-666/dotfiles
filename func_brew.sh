@@ -35,10 +35,10 @@ set_brew()
     brew update
     brew upgrade
 
-    if [ "$OS_BASE" = "$OS_MAC" ] ; then
-        brew bundle --file="${DIR_NAME}/Brewfile_mac"
+    # if [ "$OS_BASE" = "$OS_MAC" ] ; then
+    #     brew bundle --file="${DIR_NAME}/Brewfile_mac"
 
-    elif [ "$OS_BASE" = "$OS_LINUX" ] || [ "$OS_BASE" = $OS_WSL ] ; then
-        brew bundle --file="${DIR_NAME}/Brewfile_ubuntu"
-    fi
+    # elif [ "$OS_BASE" = "$OS_LINUX" ] || [ "$OS_BASE" = $OS_WSL ] ; then
+    #     brew bundle --file="${DIR_NAME}/Brewfile_ubuntu"
+    # fi
 }
