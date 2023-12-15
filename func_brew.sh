@@ -10,7 +10,7 @@ set_brew()
         if type "brew" > /dev/null 2>&1; then
             echo "'Homebrew' is already installed."
         else
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         fi
     elif [ "$OS_BASE" = "$OS_LINUX" ] || [ "$OS_BASE" = "$OS_WSL" ] ; then
         if type "brew" > /dev/null 2>&1; then
@@ -22,7 +22,7 @@ set_brew()
             echo "'Linuxbrew' is already installed, but not set PATH."
             eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
         else
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
             test -d $HOME/.linuxbrew && eval $($HOME/.linuxbrew/bin/brew shellenv)
             test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
         fi
