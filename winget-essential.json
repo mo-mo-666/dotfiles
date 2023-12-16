@@ -10,9 +10,6 @@
 					"PackageIdentifier" : "7zip.7zip"
 				},
 				{
-					"PackageIdentifier" : "Amazon.Kindle"
-				},
-				{
 					"PackageIdentifier" : "CrystalDewWorld.CrystalDiskInfo"
 				},
 				{
@@ -37,7 +34,7 @@
 					"PackageIdentifier" : "Google.Chrome"
 				},
 				{
-					"PackageIdentifier" : "Adobe.Acrobat.Reader.32-bit"
+					"PackageIdentifier" : "Adobe.Acrobat.Reader.64-bit"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
