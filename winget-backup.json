@@ -1,0 +1,131 @@
+{
+    "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+    "CreationDate": "2023-12-15T23:14:36.515-00:00",
+    "Sources": [
+        {
+            "Packages": [
+                {
+                    "PackageIdentifier": "7zip.7zip"
+                },
+                {
+                    "PackageIdentifier": "Amazon.Kindle"
+                },
+                {
+                    "PackageIdentifier": "Canonical.Ubuntu.2004"
+                },
+                {
+                    "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfo"
+                },
+                {
+                    "PackageIdentifier": "Docker.DockerDesktop"
+                },
+                {
+                    "PackageIdentifier": "Dropbox.Dropbox"
+                },
+                {
+                    "PackageIdentifier": "GeoGebra.Classic"
+                },
+                {
+                    "PackageIdentifier": "LINE.LINE"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Edge"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.EdgeWebView2Runtime"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.AppInstaller"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DevHome"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.WindowsTerminal"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Office"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.OneDrive"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.Teams.Classic"
+                },
+                {
+                    "PackageIdentifier": "Zoom.Zoom"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.DesktopRuntime.3_1"
+                },
+                {
+                    "PackageIdentifier": "Python.Python.3.8"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2010.x64"
+                },
+                {
+                    "PackageIdentifier": "Google.Chrome"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2015+.x64"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2012.x86"
+                },
+                {
+                    "PackageIdentifier": "CubeSoft.CubePDFUtility"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2015+.x86"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2008.x64"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2013.x86"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2005.x86"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.DesktopRuntime.7"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2005.x86"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2008.x86"
+                },
+                {
+                    "PackageIdentifier": "Adobe.Acrobat.Reader.32-bit"
+                },
+                {
+                    "PackageIdentifier": "Python.Launcher"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VisualStudioCode"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2010.x86"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.PowerToys"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.VCRedist.2013.x64"
+                },
+                {
+                    "PackageIdentifier": "Microsoft.DotNet.DesktopRuntime.6"
+                }
+            ],
+            "SourceDetails": {
+                "Argument": "https://cdn.winget.microsoft.com/cache",
+                "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+                "Name": "winget",
+                "Type": "Microsoft.PreIndexed.Package"
+            }
+        }
+    ],
+    "WinGetVersion": "1.6.3421"
+}

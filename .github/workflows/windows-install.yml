@@ -22,9 +22,10 @@ jobs:
     runs-on: windows-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - uses: Cyberboss/install-winget@v1
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
 # Runs a set of commands using the runners shell
     - name: Install all
-      run: winget import winget-private.json
+      run: winget import winget-private.json --disable-interactivity --accept-source-agreements

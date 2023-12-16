@@ -36,7 +36,7 @@ set_apt()
         'libedit-dev'
         'libffi-dev'
         'liblzma-dev'
-        'python-openssl'
+        'python3-openssl'
         'git'
         'language-pack-ja'
         'vim'

@@ -10,6 +10,6 @@ set_fonts()
         return
     fi
 
-    sudo apt install -y fonts-ipaexfont
+    sudo apt-get install -y fonts-ipaexfont
     fc-cache -fv
 }

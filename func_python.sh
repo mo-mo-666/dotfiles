@@ -18,8 +18,8 @@ set_pyenv()
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
-    pyenv install -s '3.10.5'
-    pyenv global '3.10.5'
+    pyenv install -s '3.11.4'
+    pyenv global '3.11.4'
     eval "$(pyenv init -)"
     pip install --upgrade 'pip'
     local pip_installs=(
