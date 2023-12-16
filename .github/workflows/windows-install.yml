@@ -28,4 +28,4 @@ jobs:
 
 # Runs a set of commands using the runners shell
     - name: Install all
-      run: winget import winget-private.json
+      run: winget import winget-private.json --disable-interactivity --accept-source-agreements
