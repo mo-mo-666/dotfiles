@@ -1,8 +1,8 @@
 # mo-mo-'s Dotfiles
-![Install Mac](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Mac/badge.svg)
-![Install Linux Normal](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Linux%20Normal/badge.svg)
-![Install Linuxbrew](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Linuxbrew/badge.svg)
-![Install on Windows](https://github.com/mo-mo-666/dotfiles/workflows/Install%20on%20Windows/badge.svg)
+[![Install on Mac](https://github.com/mo-mo-666/dotfiles/actions/workflows/install-mac.yml/badge.svg)](https://github.com/mo-mo-666/dotfiles/actions/workflows/install-mac.yml)
+[![Install on Linux Normal](https://github.com/mo-mo-666/dotfiles/actions/workflows/install-linux-normal.yml/badge.svg)](https://github.com/mo-mo-666/dotfiles/actions/workflows/install-linux-normal.yml)
+[![Install on Linuxbrew](https://github.com/mo-mo-666/dotfiles/actions/workflows/install-linuxbrew.yml/badge.svg)](https://github.com/mo-mo-666/dotfiles/actions/workflows/install-linuxbrew.yml)
+[![Install on Windows](https://github.com/mo-mo-666/dotfiles/actions/workflows/windows-install.yml/badge.svg)](https://github.com/mo-mo-666/dotfiles/actions/workflows/windows-install.yml)
 
 Deploy and Initialize for Mac, Linux(Ubuntu), and WSL(Ubuntu).
 
