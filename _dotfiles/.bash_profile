@@ -16,7 +16,7 @@ if [ -d "/mnt/c/Windows/System32" ] ; then
     # username
     # export WIN_USER=$(/mnt/c/Windows/system32/cmd.exe /C 'echo %USERNAME%' | sed -e 's/\r//g')
     # VSCode
-    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/takeda/$USER/Local/Programs/Microsoft VS Code/bin"
+    export PATH="$PATH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/$USER/AppData/Local/Programs/Microsoft VS Code/bin"
 fi
 
 # linuxbrew
