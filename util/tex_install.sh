@@ -26,7 +26,7 @@ if type "apt-get" > /dev/null 2>&1; then
     cpanm 'Log::Log4perl' 'Log::Dispatch::File' 'YAML::Tiny' 'File::HomeDir' 'Unicode::GCString'
 fi
 
-if type "fish" > /dev/null 2>&1; then
+if type "brew" > /dev/null 2>&1; then
     brew install 'perl'
     brew install 'cpanm'
     cpanm 'Log::Log4perl' 'Log::Dispatch::File' 'YAML::Tiny' 'File::HomeDir' 'Unicode::GCString'
