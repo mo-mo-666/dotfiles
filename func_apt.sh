@@ -75,7 +75,10 @@ set_apt()
         'libxss1'
         'libxtst6'
         'lsb-release'
+        'openssh-client'
+        'socat'
         'xdg-utils'
+        'keychain'
     )
     sudo apt-get install -y ${installs[@]}
     sudo update-locale LANG='ja_JP.UTF-8'

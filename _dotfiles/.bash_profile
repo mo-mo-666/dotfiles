@@ -66,6 +66,7 @@ export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib/pkgconfig"
 
+
 # ssh-agent for github devcontainer
 # https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials
 if [ -z "$SSH_AUTH_SOCK" ]; then
@@ -76,12 +77,14 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
         ssh-agent -s &> $HOME/.ssh/ssh-agent
    fi
    eval `cat $HOME/.ssh/ssh-agent`
-fi
+fi=
+# /usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
+# source $HOME/.keychain/$(hostname)-sh
 
-# if running bash
+if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+    . "$HOME/.bashrc"
     fi
 fi
