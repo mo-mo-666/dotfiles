@@ -146,11 +146,11 @@ alias brewupdate='brew update && brew upgrade && brew cleanup'
 # If error, RUN  mkdir -p /home/linuxbrew/.linuxbrew/Cellar/linux-headers@4.4/4.4.302
 
 
-# fish
-# if type "fish" > /dev/null 2>&1; then
-# # If not running interactively, don't do anything
-#     case $- in
-#         *i*) exec fish;;
-#         *) return;;
-#     esac
-# fi
+fish
+if type "fish" > /dev/null 2>&1; then
+# If not running interactively, don't do anything
+    case $- in
+        *i*) exec fish;;
+        *) return;;
+    esac
+fi
