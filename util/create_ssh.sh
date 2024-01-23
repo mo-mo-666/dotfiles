@@ -12,4 +12,7 @@ fi
 
 cat "$HOME/.ssh/id_rsa.pub"
 
-touch "$HOME/.ssh/ssh-agent
+touch "$HOME/.ssh/ssh-agent"
+
+#change permission
+find ~/.ssh -type d -print | xargs chmod 700 ; find ~/.ssh -type f -print | xargs chmod 600
