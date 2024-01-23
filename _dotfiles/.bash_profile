@@ -77,11 +77,11 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
         ssh-agent -s &> $HOME/.ssh/ssh-agent
    fi
    eval `cat $HOME/.ssh/ssh-agent`
-fi=
+fi
 # /usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
 # source $HOME/.keychain/$(hostname)-sh
 
-if running bash
+# if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
