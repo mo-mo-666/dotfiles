@@ -11,3 +11,5 @@ if [ ! -f "$HOME/.ssh/id_rsa.pub" ] \
 fi
 
 cat "$HOME/.ssh/id_rsa.pub"
+
+touch "$HOME/.ssh/ssh-agent

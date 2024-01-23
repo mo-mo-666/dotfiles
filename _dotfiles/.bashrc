@@ -147,10 +147,10 @@ alias brewupdate='brew update && brew upgrade && brew cleanup'
 
 
 # fish
-if type "fish" > /dev/null 2>&1; then
-# If not running interactively, don't do anything
-    case $- in
-        *i*) exec fish;;
-        *) return;;
-    esac
-fi
+# if type "fish" > /dev/null 2>&1; then
+# # If not running interactively, don't do anything
+#     case $- in
+#         *i*) exec fish;;
+#         *) return;;
+#     esac
+# fi
