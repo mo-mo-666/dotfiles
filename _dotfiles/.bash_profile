@@ -76,9 +76,9 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
         # Launch a new instance of the agent
         ssh-agent -s &> $HOME/.ssh/ssh-agent
    fi
-   eval `cat $HOME/.ssh/ssh-agent`
+   eval `cat $HOME/.ssh/ssh-agent` > /dev/null
+   ssh-add $HOME/.ssh/id_rsa 2> /dev/null
 fi
-ssh-add $HOME/.ssh/id_rsa
 # /usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
 # source $HOME/.keychain/$(hostname)-sh
 
