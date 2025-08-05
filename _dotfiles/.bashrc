@@ -144,7 +144,7 @@ alias ...='cd ../..'
 alias linuxupdate='sudo apt update && sudo apt upgrade -y'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 # If error, RUN  mkdir -p /home/linuxbrew/.linuxbrew/Cellar/linux-headers@4.4/4.4.302
-
+alias pyenvupdate='cd ~/.pyenv/plugins/python-build/../.. && git pull && cd -'
 
 fish
 if type "fish" > /dev/null 2>&1; then

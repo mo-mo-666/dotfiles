@@ -115,3 +115,13 @@ brew bundle dump -f --file=Brewfile_ubuntu
 ```powershell
 winget export <出力ファイル名>
 ```
+
+## 注意
+普段のupdateコマンドとして，`.bashrc`ファイルに以下の3つのコマンドを定義している。
+
+```bash
+alias linuxupdate='sudo apt update && sudo apt upgrade -y'
+alias brewupdate='brew update && brew upgrade && brew cleanup'
+alias pyenvupdate='cd ~/.pyenv/plugins/python-build/../.. && git pull && cd -'
+```
+※ pyenvだけはGitHubから直接pullしてこなければならない
