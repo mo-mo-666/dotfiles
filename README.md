@@ -73,7 +73,8 @@ Git の管理外になる。
 ./install.sh mac
 ```
 
-- Linux or WSL (Ubuntu) + 標準インストールのとき 
+- Linux or WSL (Ubuntu) + 標準インストールのとき
+
 ※ Ubuntuのダウンロードサイトをミラーサーバーに変更する設定を最初にかいている(Ubuntu24.04以降で有効)
 
 参考:
