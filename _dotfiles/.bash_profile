@@ -78,6 +78,7 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
    fi
    eval `cat $HOME/.ssh/ssh-agent` > /dev/null
    ssh-add $HOME/.ssh/id_rsa 2> /dev/null
+#    ssh-add $HOME/.ssh/id_ed25519 2> /dev/null
 fi
 # /usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
 # source $HOME/.keychain/$(hostname)-sh
