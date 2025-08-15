@@ -63,7 +63,7 @@ Git の管理外になる。
 
 ## `install.sh`
 
-デプロイからライブラリのインストール・初期設定まですべて行う。
+デプロイ(強制実行)からライブラリのインストール・初期設定まですべて行う。
 
 **注意：WSLのとき，まず `others/wsl.conf` を `/etc/wsl.conf` にコピーし，再起動してから実行すること。**
 
@@ -74,14 +74,22 @@ Git の管理外になる。
 ```
 
 - Linux or WSL (Ubuntu) + 標準インストールのとき
+※ Ubuntuのダウンロードサイトをミラーサーバーに変更する設定を最初にかいている(Ubuntu24.04以降で有効)
+
+参考:
+- [Ubuntuの日本国内向けapt mirror設定2024](https://zenn.dev/ciffelia/articles/c394962a8f188a)
+- [sudo apt update ができない](https://qiita.com/tianshanminato965/items/04f40bb5c4b1f7397a2e)
+
 
 ```bash
+sudo sed -i.bak -r 's@http://(jp\.)?archive\.ubuntu\.com/ubuntu/?@https://ftp.udx.icscoe.jp/Linux/ubuntu/@g' /etc/apt/sources.list.d/ubuntu.sources
 ./install.sh linux_normal
 ```
 
 - Linux or WSL (Ubuntu) + Linuxbrew のとき
 
 ```bash
+sudo sed -i.bak -r 's@http://(jp\.)?archive\.ubuntu\.com/ubuntu/?@https://ftp.udx.icscoe.jp/Linux/ubuntu/@g' /etc/apt/sources.list.d/ubuntu.sources
 ./install.sh linuxbrew
 ```
 
