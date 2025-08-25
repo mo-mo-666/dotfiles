@@ -61,11 +61,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# openssl@1.1
-export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib/pkgconfig"
-
 
 # ssh-agent for github devcontainer
 # https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials
