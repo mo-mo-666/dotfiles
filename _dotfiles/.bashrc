@@ -121,7 +121,7 @@ if type "pyenv" > /dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 
-# alias
+# alias NOT FISH SHELL (config ~/.config/fish/config.fish)
 alias gbr='git branch'
 alias gco='git checkout'
 alias gad='git add'
